@@ -1,6 +1,9 @@
+// NJR4262 radar program for Arduino LEONARDO
+// Development environment : vscode + platformio
+// graph : teleplot(function of vscode)
+
 #include <Arduino.h>
 #include <ArduinoSTL.h>
-
 
 // put function declarations here:
 int myFunction(int, int);

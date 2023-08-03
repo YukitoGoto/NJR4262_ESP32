@@ -12,6 +12,6 @@ Arduinoマイコンを使用して開発を行う。
 ## Hardware
 | name | description |
 | ---- | ---- |
-| Arduino leonardo | Arduinoマイコンボード |
+| [ESP32-DevkitC](https://akizukidenshi.com/catalog/g/gM-11819/) | Arduinoマイコンボード |
 | NJR4262 | 24GHz ドップラーレーダ |
 | 増幅回路 | NJR4262のI/Q信号を増幅する回路 |
