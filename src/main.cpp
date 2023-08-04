@@ -1,23 +1,21 @@
-// NJR4262 radar program for Arduino LEONARDO
+// NJR4262 radar program for ESP32
 // Development environment : vscode + platformio
 // graph : teleplot(function of vscode)
 
 #include <Arduino.h>
-#include <ArduinoSTL.h>
+#include "../lib/NJR4262_ESP32.h"
 
-// put function declarations here:
-int myFunction(int, int);
+NJR4262_ESP32 radar;
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600);
+  delay(30);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  radar.updateVariable();
+  // plot to teleplot
+  Serial.print(">Respiratory Waveform:");
+  Serial.println(radar.getpositionLPF());
+  delay(DELTA_TIME);
 }
