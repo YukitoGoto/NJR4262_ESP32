@@ -36,5 +36,5 @@ NJR4262から呼吸波形を求めるためのライブラリを格納してい�
 | ---- | ---- |
 | Vss | 5V |
 | GND | GND |
-| I Oputput(yellow) | A10(4) |
-| Q Oputput(white) | A12(2) |
+| I Output(yellow) | A10(4) |
+| Q Output(white) | A12(2) |
